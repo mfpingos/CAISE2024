@@ -1,0 +1,1403 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ex: <http://example.org/>.
+
+ex:source1
+  rdf:type ex:Description ;
+  ex:source_name "1_FLOCK_Hourly_EXPORT-05-04-2022" ;
+  ex:flockid "1" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-04-05" ;
+  ex:feedcycle_end "2022-07-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_1_data" ;
+  ex:volume "3 kb" ;
+  .
+
+ex:source2
+  rdf:type ex:Description ;
+  ex:source_name "2_FLOCK_Monthly_EXPORT-21-09-2022" ;
+  ex:flockid "2" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-09-21" ;
+  ex:feedcycle_end "2022-12-30" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_2_data" ;
+  ex:volume "56 kb" ;
+  .
+
+ex:source3
+  rdf:type ex:Description ;
+  ex:source_name "3_FLOCK_Monthly_EXPORT-01-01-2022" ;
+  ex:flockid "3" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-01-01" ;
+  ex:feedcycle_end "2022-01-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_3_data" ;
+  ex:volume "36 kb" ;
+  .
+
+ex:source4
+  rdf:type ex:Description ;
+  ex:source_name "4_FLOCK_Daily_EXPORT-20-10-2022" ;
+  ex:flockid "4" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-10-20" ;
+  ex:feedcycle_end "2022-10-27" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_4_data" ;
+  ex:volume "89 kb" ;
+  .
+
+ex:source5
+  rdf:type ex:Description ;
+  ex:source_name "5_FLOCK_Monthly_EXPORT-29-07-2022" ;
+  ex:flockid "5" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-07-29" ;
+  ex:feedcycle_end "2022-11-07" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_5_data" ;
+  ex:volume "11 kb" ;
+  .
+
+ex:source6
+  rdf:type ex:Description ;
+  ex:source_name "6_FLOCK_Daily_EXPORT-06-02-2022" ;
+  ex:flockid "6" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-02-06" ;
+  ex:feedcycle_end "2022-04-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_6_data" ;
+  ex:volume "9 kb" ;
+  .
+
+ex:source7
+  rdf:type ex:Description ;
+  ex:source_name "7_FLOCK_Yearly_EXPORT-15-11-2022" ;
+  ex:flockid "7" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-11-15" ;
+  ex:feedcycle_end "2022-12-23" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_7_data" ;
+  ex:volume "44 kb" ;
+  .
+
+ex:source8
+  rdf:type ex:Description ;
+  ex:source_name "8_FLOCK_Yearly_EXPORT-18-04-2022" ;
+  ex:flockid "8" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-04-18" ;
+  ex:feedcycle_end "2022-06-11" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_8_data" ;
+  ex:volume "38 kb" ;
+  .
+
+ex:source9
+  rdf:type ex:Description ;
+  ex:source_name "9_FLOCK_Daily_EXPORT-01-08-2022" ;
+  ex:flockid "9" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-08-01" ;
+  ex:feedcycle_end "2022-11-12" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_9_data" ;
+  ex:volume "81 kb" ;
+  .
+
+ex:source10
+  rdf:type ex:Description ;
+  ex:source_name "10_FLOCK_Monthly_EXPORT-25-09-2022" ;
+  ex:flockid "10" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-09-25" ;
+  ex:feedcycle_end "2022-12-11" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_10_data" ;
+  ex:volume "29 kb" ;
+  .
+
+ex:source11
+  rdf:type ex:Description ;
+  ex:source_name "11_FLOCK_Yearly_EXPORT-02-10-2022" ;
+  ex:flockid "11" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-10-02" ;
+  ex:feedcycle_end "2023-01-17" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_11_data" ;
+  ex:volume "10 kb" ;
+  .
+
+ex:source12
+  rdf:type ex:Description ;
+  ex:source_name "12_FLOCK_Daily_EXPORT-10-04-2022" ;
+  ex:flockid "12" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-04-10" ;
+  ex:feedcycle_end "2022-07-30" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_12_data" ;
+  ex:volume "14 kb" ;
+  .
+
+ex:source13
+  rdf:type ex:Description ;
+  ex:source_name "13_FLOCK_Monthly_EXPORT-23-12-2022" ;
+  ex:flockid "13" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-12-23" ;
+  ex:feedcycle_end "2023-02-22" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_13_data" ;
+  ex:volume "77 kb" ;
+  .
+
+ex:source14
+  rdf:type ex:Description ;
+  ex:source_name "14_FLOCK_Yearly_EXPORT-02-11-2022" ;
+  ex:flockid "14" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-11-02" ;
+  ex:feedcycle_end "2022-11-02" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_14_data" ;
+  ex:volume "89 kb" ;
+  .
+
+ex:source15
+  rdf:type ex:Description ;
+  ex:source_name "15_FLOCK_Hourly_EXPORT-03-09-2022" ;
+  ex:flockid "15" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-09-03" ;
+  ex:feedcycle_end "2022-11-22" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_15_data" ;
+  ex:volume "69 kb" ;
+  .
+
+ex:source16
+  rdf:type ex:Description ;
+  ex:source_name "16_FLOCK_Daily_EXPORT-27-11-2022" ;
+  ex:flockid "16" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-11-27" ;
+  ex:feedcycle_end "2023-01-24" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_16_data" ;
+  ex:volume "58 kb" ;
+  .
+
+ex:source17
+  rdf:type ex:Description ;
+  ex:source_name "17_FLOCK_Yearly_EXPORT-13-06-2022" ;
+  ex:flockid "17" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-06-13" ;
+  ex:feedcycle_end "2022-08-25" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_17_data" ;
+  ex:volume "12 kb" ;
+  .
+
+ex:source18
+  rdf:type ex:Description ;
+  ex:source_name "18_FLOCK_Hourly_EXPORT-02-12-2022" ;
+  ex:flockid "18" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-12-02" ;
+  ex:feedcycle_end "2023-02-06" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_18_data" ;
+  ex:volume "15 kb" ;
+  .
+
+ex:source19
+  rdf:type ex:Description ;
+  ex:source_name "19_FLOCK_Yearly_EXPORT-31-05-2022" ;
+  ex:flockid "19" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-05-31" ;
+  ex:feedcycle_end "2022-09-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_19_data" ;
+  ex:volume "29 kb" ;
+  .
+
+ex:source20
+  rdf:type ex:Description ;
+  ex:source_name "20_FLOCK_Hourly_EXPORT-18-04-2022" ;
+  ex:flockid "20" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-04-18" ;
+  ex:feedcycle_end "2022-07-24" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_20_data" ;
+  ex:volume "55 kb" ;
+  .
+
+ex:source21
+  rdf:type ex:Description ;
+  ex:source_name "21_FLOCK_Hourly_EXPORT-13-02-2022" ;
+  ex:flockid "21" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-02-13" ;
+  ex:feedcycle_end "2022-02-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_21_data" ;
+  ex:volume "91 kb" ;
+  .
+
+ex:source22
+  rdf:type ex:Description ;
+  ex:source_name "22_FLOCK_Daily_EXPORT-02-06-2022" ;
+  ex:flockid "22" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-06-02" ;
+  ex:feedcycle_end "2022-09-07" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_22_data" ;
+  ex:volume "40 kb" ;
+  .
+
+ex:source23
+  rdf:type ex:Description ;
+  ex:source_name "23_FLOCK_Yearly_EXPORT-04-03-2022" ;
+  ex:flockid "23" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-03-04" ;
+  ex:feedcycle_end "2022-03-29" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_23_data" ;
+  ex:volume "91 kb" ;
+  .
+
+ex:source24
+  rdf:type ex:Description ;
+  ex:source_name "24_FLOCK_Hourly_EXPORT-28-05-2022" ;
+  ex:flockid "24" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-05-28" ;
+  ex:feedcycle_end "2022-09-20" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_24_data" ;
+  ex:volume "4 kb" ;
+  .
+
+ex:source25
+  rdf:type ex:Description ;
+  ex:source_name "25_FLOCK_Hourly_EXPORT-13-06-2022" ;
+  ex:flockid "25" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-06-13" ;
+  ex:feedcycle_end "2022-09-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_25_data" ;
+  ex:volume "60 kb" ;
+  .
+
+ex:source26
+  rdf:type ex:Description ;
+  ex:source_name "26_FLOCK_Yearly_EXPORT-23-03-2022" ;
+  ex:flockid "26" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-03-23" ;
+  ex:feedcycle_end "2022-05-30" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_26_data" ;
+  ex:volume "15 kb" ;
+  .
+
+ex:source27
+  rdf:type ex:Description ;
+  ex:source_name "27_FLOCK_Yearly_EXPORT-21-04-2022" ;
+  ex:flockid "27" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-04-21" ;
+  ex:feedcycle_end "2022-07-01" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_27_data" ;
+  ex:volume "80 kb" ;
+  .
+
+ex:source28
+  rdf:type ex:Description ;
+  ex:source_name "28_FLOCK_Yearly_EXPORT-21-03-2022" ;
+  ex:flockid "28" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-03-21" ;
+  ex:feedcycle_end "2022-04-04" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_28_data" ;
+  ex:volume "52 kb" ;
+  .
+
+ex:source29
+  rdf:type ex:Description ;
+  ex:source_name "29_FLOCK_Monthly_EXPORT-20-06-2022" ;
+  ex:flockid "29" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-06-20" ;
+  ex:feedcycle_end "2022-09-10" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_29_data" ;
+  ex:volume "72 kb" ;
+  .
+
+ex:source30
+  rdf:type ex:Description ;
+  ex:source_name "30_FLOCK_Daily_EXPORT-30-11-2022" ;
+  ex:flockid "30" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-11-30" ;
+  ex:feedcycle_end "2023-02-10" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_30_data" ;
+  ex:volume "1 kb" ;
+  .
+
+ex:source31
+  rdf:type ex:Description ;
+  ex:source_name "31_FLOCK_Daily_EXPORT-02-08-2022" ;
+  ex:flockid "31" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-08-02" ;
+  ex:feedcycle_end "2022-09-04" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_31_data" ;
+  ex:volume "15 kb" ;
+  .
+
+ex:source32
+  rdf:type ex:Description ;
+  ex:source_name "32_FLOCK_Daily_EXPORT-03-02-2022" ;
+  ex:flockid "32" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-02-03" ;
+  ex:feedcycle_end "2022-04-28" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_32_data" ;
+  ex:volume "22 kb" ;
+  .
+
+ex:source33
+  rdf:type ex:Description ;
+  ex:source_name "33_FLOCK_Daily_EXPORT-19-06-2022" ;
+  ex:flockid "33" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-06-19" ;
+  ex:feedcycle_end "2022-07-11" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_33_data" ;
+  ex:volume "86 kb" ;
+  .
+
+ex:source34
+  rdf:type ex:Description ;
+  ex:source_name "34_FLOCK_Hourly_EXPORT-02-10-2022" ;
+  ex:flockid "34" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-10-02" ;
+  ex:feedcycle_end "2022-10-09" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_34_data" ;
+  ex:volume "34 kb" ;
+  .
+
+ex:source35
+  rdf:type ex:Description ;
+  ex:source_name "35_FLOCK_Monthly_EXPORT-26-02-2022" ;
+  ex:flockid "35" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-02-26" ;
+  ex:feedcycle_end "2022-05-10" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_35_data" ;
+  ex:volume "19 kb" ;
+  .
+
+ex:source36
+  rdf:type ex:Description ;
+  ex:source_name "36_FLOCK_Yearly_EXPORT-19-03-2022" ;
+  ex:flockid "36" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-03-19" ;
+  ex:feedcycle_end "2022-07-02" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_36_data" ;
+  ex:volume "28 kb" ;
+  .
+
+ex:source37
+  rdf:type ex:Description ;
+  ex:source_name "37_FLOCK_Monthly_EXPORT-27-11-2022" ;
+  ex:flockid "37" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-11-27" ;
+  ex:feedcycle_end "2023-01-27" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_37_data" ;
+  ex:volume "61 kb" ;
+  .
+
+ex:source38
+  rdf:type ex:Description ;
+  ex:source_name "38_FLOCK_Yearly_EXPORT-28-04-2022" ;
+  ex:flockid "38" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-04-28" ;
+  ex:feedcycle_end "2022-08-12" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_38_data" ;
+  ex:volume "46 kb" ;
+  .
+
+ex:source39
+  rdf:type ex:Description ;
+  ex:source_name "39_FLOCK_Yearly_EXPORT-01-04-2022" ;
+  ex:flockid "39" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-04-01" ;
+  ex:feedcycle_end "2022-04-17" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_39_data" ;
+  ex:volume "99 kb" ;
+  .
+
+ex:source40
+  rdf:type ex:Description ;
+  ex:source_name "40_FLOCK_Hourly_EXPORT-13-05-2022" ;
+  ex:flockid "40" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-05-13" ;
+  ex:feedcycle_end "2022-07-04" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_40_data" ;
+  ex:volume "40 kb" ;
+  .
+
+ex:source41
+  rdf:type ex:Description ;
+  ex:source_name "41_FLOCK_Monthly_EXPORT-07-03-2022" ;
+  ex:flockid "41" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-03-07" ;
+  ex:feedcycle_end "2022-06-25" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_41_data" ;
+  ex:volume "23 kb" ;
+  .
+
+ex:source42
+  rdf:type ex:Description ;
+  ex:source_name "42_FLOCK_Hourly_EXPORT-09-11-2022" ;
+  ex:flockid "42" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-11-09" ;
+  ex:feedcycle_end "2022-11-20" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_42_data" ;
+  ex:volume "22 kb" ;
+  .
+
+ex:source43
+  rdf:type ex:Description ;
+  ex:source_name "43_FLOCK_Monthly_EXPORT-06-04-2022" ;
+  ex:flockid "43" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-04-06" ;
+  ex:feedcycle_end "2022-05-22" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_43_data" ;
+  ex:volume "70 kb" ;
+  .
+
+ex:source44
+  rdf:type ex:Description ;
+  ex:source_name "44_FLOCK_Hourly_EXPORT-15-11-2022" ;
+  ex:flockid "44" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-11-15" ;
+  ex:feedcycle_end "2022-12-24" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_44_data" ;
+  ex:volume "94 kb" ;
+  .
+
+ex:source45
+  rdf:type ex:Description ;
+  ex:source_name "45_FLOCK_Daily_EXPORT-30-06-2022" ;
+  ex:flockid "45" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-06-30" ;
+  ex:feedcycle_end "2022-09-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_45_data" ;
+  ex:volume "34 kb" ;
+  .
+
+ex:source46
+  rdf:type ex:Description ;
+  ex:source_name "46_FLOCK_Hourly_EXPORT-25-06-2022" ;
+  ex:flockid "46" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-06-25" ;
+  ex:feedcycle_end "2022-08-21" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_46_data" ;
+  ex:volume "91 kb" ;
+  .
+
+ex:source47
+  rdf:type ex:Description ;
+  ex:source_name "47_FLOCK_Daily_EXPORT-19-05-2022" ;
+  ex:flockid "47" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-05-19" ;
+  ex:feedcycle_end "2022-05-21" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_47_data" ;
+  ex:volume "88 kb" ;
+  .
+
+ex:source48
+  rdf:type ex:Description ;
+  ex:source_name "48_FLOCK_Yearly_EXPORT-11-08-2022" ;
+  ex:flockid "48" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-08-11" ;
+  ex:feedcycle_end "2022-09-29" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_48_data" ;
+  ex:volume "20 kb" ;
+  .
+
+ex:source49
+  rdf:type ex:Description ;
+  ex:source_name "49_FLOCK_Monthly_EXPORT-17-01-2022" ;
+  ex:flockid "49" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-01-17" ;
+  ex:feedcycle_end "2022-02-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_49_data" ;
+  ex:volume "83 kb" ;
+  .
+
+ex:source50
+  rdf:type ex:Description ;
+  ex:source_name "50_FLOCK_Yearly_EXPORT-30-05-2022" ;
+  ex:flockid "50" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-05-30" ;
+  ex:feedcycle_end "2022-08-08" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_50_data" ;
+  ex:volume "50 kb" ;
+  .
+
+ex:source51
+  rdf:type ex:Description ;
+  ex:source_name "51_FLOCK_Yearly_EXPORT-15-02-2022" ;
+  ex:flockid "51" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-02-15" ;
+  ex:feedcycle_end "2022-04-18" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_51_data" ;
+  ex:volume "2 kb" ;
+  .
+
+ex:source52
+  rdf:type ex:Description ;
+  ex:source_name "52_FLOCK_Daily_EXPORT-29-03-2022" ;
+  ex:flockid "52" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-03-29" ;
+  ex:feedcycle_end "2022-04-26" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_52_data" ;
+  ex:volume "68 kb" ;
+  .
+
+ex:source53
+  rdf:type ex:Description ;
+  ex:source_name "53_FLOCK_Daily_EXPORT-05-11-2022" ;
+  ex:flockid "53" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-11-05" ;
+  ex:feedcycle_end "2023-01-28" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_53_data" ;
+  ex:volume "73 kb" ;
+  .
+
+ex:source54
+  rdf:type ex:Description ;
+  ex:source_name "54_FLOCK_Hourly_EXPORT-30-05-2022" ;
+  ex:flockid "54" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-05-30" ;
+  ex:feedcycle_end "2022-06-07" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_54_data" ;
+  ex:volume "49 kb" ;
+  .
+
+ex:source55
+  rdf:type ex:Description ;
+  ex:source_name "55_FLOCK_Monthly_EXPORT-25-11-2022" ;
+  ex:flockid "55" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-11-25" ;
+  ex:feedcycle_end "2022-12-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_55_data" ;
+  ex:volume "97 kb" ;
+  .
+
+ex:source56
+  rdf:type ex:Description ;
+  ex:source_name "56_FLOCK_Monthly_EXPORT-22-02-2022" ;
+  ex:flockid "56" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-02-22" ;
+  ex:feedcycle_end "2022-03-27" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_56_data" ;
+  ex:volume "98 kb" ;
+  .
+
+ex:source57
+  rdf:type ex:Description ;
+  ex:source_name "57_FLOCK_Yearly_EXPORT-08-01-2022" ;
+  ex:flockid "57" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-01-08" ;
+  ex:feedcycle_end "2022-01-13" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_57_data" ;
+  ex:volume "76 kb" ;
+  .
+
+ex:source58
+  rdf:type ex:Description ;
+  ex:source_name "58_FLOCK_Daily_EXPORT-30-01-2022" ;
+  ex:flockid "58" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-01-30" ;
+  ex:feedcycle_end "2022-05-07" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_58_data" ;
+  ex:volume "96 kb" ;
+  .
+
+ex:source59
+  rdf:type ex:Description ;
+  ex:source_name "59_FLOCK_Monthly_EXPORT-15-09-2022" ;
+  ex:flockid "59" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-09-15" ;
+  ex:feedcycle_end "2022-11-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_59_data" ;
+  ex:volume "97 kb" ;
+  .
+
+ex:source60
+  rdf:type ex:Description ;
+  ex:source_name "60_FLOCK_Yearly_EXPORT-27-04-2022" ;
+  ex:flockid "60" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-04-27" ;
+  ex:feedcycle_end "2022-05-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_60_data" ;
+  ex:volume "53 kb" ;
+  .
+
+ex:source61
+  rdf:type ex:Description ;
+  ex:source_name "61_FLOCK_Hourly_EXPORT-17-01-2022" ;
+  ex:flockid "61" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-01-17" ;
+  ex:feedcycle_end "2022-05-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_61_data" ;
+  ex:volume "42 kb" ;
+  .
+
+ex:source62
+  rdf:type ex:Description ;
+  ex:source_name "62_FLOCK_Monthly_EXPORT-05-04-2022" ;
+  ex:flockid "62" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-04-05" ;
+  ex:feedcycle_end "2022-05-25" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_62_data" ;
+  ex:volume "75 kb" ;
+  .
+
+ex:source63
+  rdf:type ex:Description ;
+  ex:source_name "63_FLOCK_Yearly_EXPORT-02-10-2022" ;
+  ex:flockid "63" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-10-02" ;
+  ex:feedcycle_end "2022-12-24" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_63_data" ;
+  ex:volume "70 kb" ;
+  .
+
+ex:source64
+  rdf:type ex:Description ;
+  ex:source_name "64_FLOCK_Hourly_EXPORT-14-11-2022" ;
+  ex:flockid "64" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-11-14" ;
+  ex:feedcycle_end "2023-01-18" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_64_data" ;
+  ex:volume "99 kb" ;
+  .
+
+ex:source65
+  rdf:type ex:Description ;
+  ex:source_name "65_FLOCK_Monthly_EXPORT-12-10-2022" ;
+  ex:flockid "65" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-10-12" ;
+  ex:feedcycle_end "2022-10-17" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_65_data" ;
+  ex:volume "80 kb" ;
+  .
+
+ex:source66
+  rdf:type ex:Description ;
+  ex:source_name "66_FLOCK_Daily_EXPORT-13-12-2022" ;
+  ex:flockid "66" ;
+  ex:location "Larnaca" ;
+  ex:feedcycle_start "2022-12-13" ;
+  ex:feedcycle_end "2023-03-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_66_data" ;
+  ex:volume "85 kb" ;
+  .
+
+ex:source67
+  rdf:type ex:Description ;
+  ex:source_name "67_FLOCK_Yearly_EXPORT-21-08-2022" ;
+  ex:flockid "67" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-08-21" ;
+  ex:feedcycle_end "2022-10-16" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_67_data" ;
+  ex:volume "64 kb" ;
+  .
+
+ex:source68
+  rdf:type ex:Description ;
+  ex:source_name "68_FLOCK_Hourly_EXPORT-13-05-2022" ;
+  ex:flockid "68" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-05-13" ;
+  ex:feedcycle_end "2022-07-04" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_68_data" ;
+  ex:volume "36 kb" ;
+  .
+
+ex:source69
+  rdf:type ex:Description ;
+  ex:source_name "69_FLOCK_Daily_EXPORT-21-03-2022" ;
+  ex:flockid "69" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-03-21" ;
+  ex:feedcycle_end "2022-06-16" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_69_data" ;
+  ex:volume "90 kb" ;
+  .
+
+ex:source70
+  rdf:type ex:Description ;
+  ex:source_name "70_FLOCK_Hourly_EXPORT-19-04-2022" ;
+  ex:flockid "70" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-04-19" ;
+  ex:feedcycle_end "2022-07-02" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_70_data" ;
+  ex:volume "86 kb" ;
+  .
+
+ex:source71
+  rdf:type ex:Description ;
+  ex:source_name "71_FLOCK_Daily_EXPORT-16-02-2022" ;
+  ex:flockid "71" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-02-16" ;
+  ex:feedcycle_end "2022-05-18" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_71_data" ;
+  ex:volume "86 kb" ;
+  .
+
+ex:source72
+  rdf:type ex:Description ;
+  ex:source_name "72_FLOCK_Hourly_EXPORT-20-05-2022" ;
+  ex:flockid "72" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-05-20" ;
+  ex:feedcycle_end "2022-09-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_72_data" ;
+  ex:volume "83 kb" ;
+  .
+
+ex:source73
+  rdf:type ex:Description ;
+  ex:source_name "73_FLOCK_Monthly_EXPORT-15-08-2022" ;
+  ex:flockid "73" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-08-15" ;
+  ex:feedcycle_end "2022-11-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_73_data" ;
+  ex:volume "76 kb" ;
+  .
+
+ex:source74
+  rdf:type ex:Description ;
+  ex:source_name "74_FLOCK_Yearly_EXPORT-26-05-2022" ;
+  ex:flockid "74" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-05-26" ;
+  ex:feedcycle_end "2022-09-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_74_data" ;
+  ex:volume "74 kb" ;
+  .
+
+ex:source75
+  rdf:type ex:Description ;
+  ex:source_name "75_FLOCK_Hourly_EXPORT-13-08-2022" ;
+  ex:flockid "75" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-08-13" ;
+  ex:feedcycle_end "2022-08-24" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_75_data" ;
+  ex:volume "74 kb" ;
+  .
+
+ex:source76
+  rdf:type ex:Description ;
+  ex:source_name "76_FLOCK_Hourly_EXPORT-24-08-2022" ;
+  ex:flockid "76" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-08-24" ;
+  ex:feedcycle_end "2022-11-13" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_76_data" ;
+  ex:volume "66 kb" ;
+  .
+
+ex:source77
+  rdf:type ex:Description ;
+  ex:source_name "77_FLOCK_Daily_EXPORT-26-07-2022" ;
+  ex:flockid "77" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-07-26" ;
+  ex:feedcycle_end "2022-11-14" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_77_data" ;
+  ex:volume "90 kb" ;
+  .
+
+ex:source78
+  rdf:type ex:Description ;
+  ex:source_name "78_FLOCK_Daily_EXPORT-30-08-2022" ;
+  ex:flockid "78" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-08-30" ;
+  ex:feedcycle_end "2022-10-22" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_78_data" ;
+  ex:volume "43 kb" ;
+  .
+
+ex:source79
+  rdf:type ex:Description ;
+  ex:source_name "79_FLOCK_Yearly_EXPORT-12-02-2022" ;
+  ex:flockid "79" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-02-12" ;
+  ex:feedcycle_end "2022-04-13" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_79_data" ;
+  ex:volume "62 kb" ;
+  .
+
+ex:source80
+  rdf:type ex:Description ;
+  ex:source_name "80_FLOCK_Daily_EXPORT-19-10-2022" ;
+  ex:flockid "80" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-10-19" ;
+  ex:feedcycle_end "2023-02-04" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_80_data" ;
+  ex:volume "15 kb" ;
+  .
+
+ex:source81
+  rdf:type ex:Description ;
+  ex:source_name "81_FLOCK_Hourly_EXPORT-02-09-2022" ;
+  ex:flockid "81" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-09-02" ;
+  ex:feedcycle_end "2022-09-28" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_81_data" ;
+  ex:volume "91 kb" ;
+  .
+
+ex:source82
+  rdf:type ex:Description ;
+  ex:source_name "82_FLOCK_Daily_EXPORT-28-10-2022" ;
+  ex:flockid "82" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-10-28" ;
+  ex:feedcycle_end "2022-11-29" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_82_data" ;
+  ex:volume "83 kb" ;
+  .
+
+ex:source83
+  rdf:type ex:Description ;
+  ex:source_name "83_FLOCK_Hourly_EXPORT-12-08-2022" ;
+  ex:flockid "83" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-08-12" ;
+  ex:feedcycle_end "2022-08-21" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_83_data" ;
+  ex:volume "58 kb" ;
+  .
+
+ex:source84
+  rdf:type ex:Description ;
+  ex:source_name "84_FLOCK_Daily_EXPORT-03-01-2022" ;
+  ex:flockid "84" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-01-03" ;
+  ex:feedcycle_end "2022-04-29" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_84_data" ;
+  ex:volume "1 kb" ;
+  .
+
+ex:source85
+  rdf:type ex:Description ;
+  ex:source_name "85_FLOCK_Yearly_EXPORT-03-07-2022" ;
+  ex:flockid "85" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-07-03" ;
+  ex:feedcycle_end "2022-07-10" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_85_data" ;
+  ex:volume "83 kb" ;
+  .
+
+ex:source86
+  rdf:type ex:Description ;
+  ex:source_name "86_FLOCK_Daily_EXPORT-26-01-2022" ;
+  ex:flockid "86" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-01-26" ;
+  ex:feedcycle_end "2022-02-01" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_86_data" ;
+  ex:volume "20 kb" ;
+  .
+
+ex:source87
+  rdf:type ex:Description ;
+  ex:source_name "87_FLOCK_Hourly_EXPORT-30-06-2022" ;
+  ex:flockid "87" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-06-30" ;
+  ex:feedcycle_end "2022-07-09" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_87_data" ;
+  ex:volume "77 kb" ;
+  .
+
+ex:source88
+  rdf:type ex:Description ;
+  ex:source_name "88_FLOCK_Monthly_EXPORT-31-08-2022" ;
+  ex:flockid "88" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-08-31" ;
+  ex:feedcycle_end "2022-11-03" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_88_data" ;
+  ex:volume "3 kb" ;
+  .
+
+ex:source89
+  rdf:type ex:Description ;
+  ex:source_name "89_FLOCK_Yearly_EXPORT-21-02-2022" ;
+  ex:flockid "89" ;
+  ex:location "Nicosia" ;
+  ex:feedcycle_start "2022-02-21" ;
+  ex:feedcycle_end "2022-05-19" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_89_data" ;
+  ex:volume "66 kb" ;
+  .
+
+ex:source90
+  rdf:type ex:Description ;
+  ex:source_name "90_FLOCK_Daily_EXPORT-07-11-2022" ;
+  ex:flockid "90" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-11-07" ;
+  ex:feedcycle_end "2022-11-12" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_90_data" ;
+  ex:volume "13 kb" ;
+  .
+
+ex:source91
+  rdf:type ex:Description ;
+  ex:source_name "91_FLOCK_Daily_EXPORT-24-06-2022" ;
+  ex:flockid "91" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-06-24" ;
+  ex:feedcycle_end "2022-10-21" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_91_data" ;
+  ex:volume "22 kb" ;
+  .
+
+ex:source92
+  rdf:type ex:Description ;
+  ex:source_name "92_FLOCK_Monthly_EXPORT-09-05-2022" ;
+  ex:flockid "92" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-05-09" ;
+  ex:feedcycle_end "2022-06-01" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_92_data" ;
+  ex:volume "21 kb" ;
+  .
+
+ex:source93
+  rdf:type ex:Description ;
+  ex:source_name "93_FLOCK_Yearly_EXPORT-24-02-2022" ;
+  ex:flockid "93" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-02-24" ;
+  ex:feedcycle_end "2022-02-26" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_93_data" ;
+  ex:volume "67 kb" ;
+  .
+
+ex:source94
+  rdf:type ex:Description ;
+  ex:source_name "94_FLOCK_Daily_EXPORT-09-11-2022" ;
+  ex:flockid "94" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-11-09" ;
+  ex:feedcycle_end "2022-12-02" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Daily" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_94_data" ;
+  ex:volume "29 kb" ;
+  .
+
+ex:source95
+  rdf:type ex:Description ;
+  ex:source_name "95_FLOCK_Monthly_EXPORT-29-10-2022" ;
+  ex:flockid "95" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-10-29" ;
+  ex:feedcycle_end "2022-11-25" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_95_data" ;
+  ex:volume "34 kb" ;
+  .
+
+ex:source96
+  rdf:type ex:Description ;
+  ex:source_name "96_FLOCK_Monthly_EXPORT-21-08-2022" ;
+  ex:flockid "96" ;
+  ex:location "Pafos" ;
+  ex:feedcycle_start "2022-08-21" ;
+  ex:feedcycle_end "2022-10-22" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_96_data" ;
+  ex:volume "74 kb" ;
+  .
+
+ex:source97
+  rdf:type ex:Description ;
+  ex:source_name "97_FLOCK_Hourly_EXPORT-22-07-2022" ;
+  ex:flockid "97" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-07-22" ;
+  ex:feedcycle_end "2022-08-23" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "unstructured" ;
+  ex:velocity "Hourly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_97_data" ;
+  ex:volume "9 kb" ;
+  .
+
+ex:source98
+  rdf:type ex:Description ;
+  ex:source_name "98_FLOCK_Monthly_EXPORT-24-11-2022" ;
+  ex:flockid "98" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-11-24" ;
+  ex:feedcycle_end "2023-02-07" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_98_data" ;
+  ex:volume "49 kb" ;
+  .
+
+ex:source99
+  rdf:type ex:Description ;
+  ex:source_name "99_FLOCK_Monthly_EXPORT-06-06-2022" ;
+  ex:flockid "99" ;
+  ex:location "Limassol" ;
+  ex:feedcycle_start "2022-06-06" ;
+  ex:feedcycle_end "2022-07-23" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Monthly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_99_data" ;
+  ex:volume "41 kb" ;
+  .
+
+ex:source100
+  rdf:type ex:Description ;
+  ex:source_name "100_FLOCK_Yearly_EXPORT-18-02-2022" ;
+  ex:flockid "100" ;
+  ex:location "Famagusta" ;
+  ex:feedcycle_start "2022-02-18" ;
+  ex:feedcycle_end "2022-05-29" ;
+  ex:keywords "growDay, hour, requiredTemperature, coldTemperatureAlarm, hotTemperatureAlarm, sensor1, sensor2, sensor3, sensor4, sensor5, outsideTemp, currentAverageTemp, humidity, staticPressure, currentCO2, CO2HourMax, CO2HourMin" ;
+  ex:variety "semi-structured" ;
+  ex:velocity "Yearly" ;
+  ex:source_path "hdfs://your-hadoop-namenode:9000/user/sources/daily_flock_100_data" ;
+  ex:volume "2 kb" ;
+  .
+
