@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.org/>
+
+SELECT ?sourceName ?start ?end
+WHERE {
+  ?source rdf:type ex:Description ;
+          ex:source_name ?sourceName ;
+          ex:velocity "Daily" ;
+          ex:feedcycle_start ?start ;
+          ex:feedcycle_end ?end .
+}
