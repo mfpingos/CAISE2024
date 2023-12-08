@@ -1,0 +1,7 @@
+RUN generator file on:
+
+100Ksources.zip  --> 100000 sources
+100sources.ttl --> 100 sources
+10Ksources.ttl --> 10000 sources
+
+Declare the Levels for each run in order to create the structure.
